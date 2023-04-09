@@ -1,0 +1,379 @@
+<html>
+    <head>
+        <title>CHESS BOARD</title>
+        <h1>PLAY CHESS!!!</h1>
+        <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(8);
+            gap: 0px;
+            grid-auto-rows: minmax(80px,80px);
+            grid-auto-columns: minmax(80px,80px);
+            position: relative;;
+            padding-left: 100;
+            padding-top: 50;
+        }
+        .r11{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .r12{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .r13{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 3;
+            grid-row: 1;
+        }
+        .r14{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 4;
+            grid-row: 1;
+        }
+        .r15{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 5;
+            grid-row: 1;
+        }
+        .r16{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 6;
+            grid-row: 1;
+        } 
+        .r17{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 7;
+            grid-row: 1;
+        }
+        .r18{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 8;
+            grid-row: 1;
+        }
+        .r21{
+            border: 2px solid black;
+            background-color:  white;
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .r22{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 2;
+            grid-row: 2;
+        }
+        .r23{
+            border: 2px solid black;
+            background-color:  white;
+            grid-column: 3;
+            grid-row: 2;
+        } 
+         .r24{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 4;
+            grid-row: 2;
+        }
+        .r25{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 5;
+            grid-row: 2;
+        }
+        .r26{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 6;
+            grid-row: 2;
+        }
+        .r27{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 7;
+            grid-row: 2;
+        }
+        .r28{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 8;
+            grid-row: 2;
+        }
+        .r31{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .r32{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 2;
+            grid-row: 3;
+        } 
+        .r33{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 3;
+            grid-row: 3;
+        }
+        .r34{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 4;
+            grid-row: 3;
+        }
+        .r35{
+            border: 2px solid black;
+            background-color:  black;
+            grid-column: 5;
+            grid-row: 3;
+        }
+        .r36{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 6;
+            grid-row: 3;
+        }
+        .r37{
+            border: 2px solid black;
+            background-color:  black;
+            grid-column: 7;
+            grid-row: 3;
+        } 
+        .r38{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 8;
+            grid-row: 3;
+        }    
+        .r41{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 1;
+            grid-row: 4;
+        }
+        .r42{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 2;
+            grid-row: 4;
+        }
+        .r43{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 3;
+            grid-row: 4;
+        }
+        .r44{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 4;
+            grid-row: 4;
+        }
+        .r45{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 5;
+            grid-row: 4;
+        }
+        .r46{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 6;
+            grid-row: 4;
+        } 
+        .r47{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 7;
+            grid-row: 4;
+        }
+        .r48{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 8;
+            grid-row: 4;
+        } 
+        .r51{
+            border: 2px solid black;
+            background-color:  black;
+            grid-column: 1;
+            grid-row: 5;
+        }
+        .r52{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 2;
+            grid-row: 5;
+        }
+        .r53{
+            border: 2px solid black;
+            background-color:  black;
+            grid-column: 3;
+            grid-row: 5;
+        } 
+        .r54{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 4;
+            grid-row: 5;  
+        }
+        .r55{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 5;
+            grid-row: 5;
+        }
+        .r56{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 6;
+            grid-row: 5;
+        }
+        .r57{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 7;
+            grid-row: 5;
+        }
+        .r58{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 8;
+            grid-row: 5;
+        }
+        .r61{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 1;
+            grid-row: 6;
+        }
+        .r62{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 2;
+            grid-row: 6;
+        } 
+        .r63{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 3;
+            grid-row: 6;
+        }
+        .r64{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 4;
+            grid-row: 6;
+        }
+        .r65{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 5;
+            grid-row: 6;
+        }
+        .r66{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 6;
+            grid-row: 6;
+        } 
+        .r67{
+            border: 2px solid black;
+            background-color: white;
+            grid-column: 7;
+            grid-row: 6;
+        }
+        .r68{
+            border: 2px solid black;
+            background-color: black;
+            grid-column: 8;
+            grid-row: 6;
+        }
+        .wr{
+            display: grid;
+            grid-template-columns: 150px auto;
+            grid-template-rows:150 ;
+            padding: 10px;
+            grid-column-gap: 10px;
+            grid-column: 10;
+            grid-row: 1;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="r11" style="font-size: 50; text-align: center; color: aliceblue;">&#9814;</div>
+            <div class="r12" style="font-size: 50; text-align: center;">&#9816;</div>
+            <div class="r13" style="font-size: 50; text-align: center; color: aliceblue;">&#9815;</div>
+            <div class="r14" style="font-size: 50; text-align: center;">&#9812;</div>
+            <div class="r15" style="font-size: 50; text-align: center; color: aliceblue;">&#9813;</div>
+            <div class="r16" style="font-size: 50; text-align: center;">&#9815;</div>
+            <div class="r17" style="font-size: 50; text-align: center; color: aliceblue;">&#9816;</div>
+            <div class="r18" style="font-size: 50; text-align: center;">&#9814;</div>
+            <div class="r21" style="font-size: 50; text-align: center;">&#9817;</div>
+            <div class="r22" style="font-size: 50; text-align: center; color: aliceblue;">&#9817;</div>
+            <div class="r23" style="font-size: 50; text-align: center;">&#9817;</div>
+            <div class="r24" style="font-size: 50; text-align: center; color: aliceblue;">&#9817;</div>
+            <div class="r25" style="font-size: 50; text-align: center;">&#9817;</div>
+            <div class="r26" style="font-size: 50; text-align: center; color: aliceblue;">&#9817;</div>
+            <div class="r27" style="font-size: 50; text-align: center;">&#9817;</div>
+            <div class="r28" style="font-size: 50; text-align: center; color: aliceblue;">&#9817;</div>
+            <div class="r31"></div>
+            <div class="r32"></div>
+            <div class="r33"></div>
+            <div class="r34"></div>
+            <div class="r35"></div>
+            <div class="r36"></div>
+            <div class="r37"></div>
+            <div class="r38"></div>
+            <div class="r41"></div>
+            <div class="r42"></div>
+            <div class="r43"></div>
+            <div class="r44"></div>
+            <div class="r45"></div>
+            <div class="r46"></div>
+            <div class="r47"></div>
+            <div class="r48"></div>
+            <div class="r51" style="font-size: 50; text-align: center; color: white">&#9823;</div>
+            <div class="r52" style="font-size: 50; text-align: center; color: black;">&#9823;</div>
+            <div class="r53" style="font-size: 50; text-align: center; color: white">&#9823;</div>
+            <div class="r54" style="font-size: 50; text-align: center; color: black;">&#9823;</div>
+            <div class="r55" style="font-size: 50; text-align: center; color: white">&#9823;</div>
+            <div class="r56" style="font-size: 50; text-align: center; color: black;">&#9823;</div>
+            <div class="r57" style="font-size: 50; text-align: center; color: white">&#9823;</div>
+            <div class="r58" style="font-size: 50; text-align: center; color: black;">&#9823;</div>
+            <div class="r61" style="font-size: 50; text-align: center; color: black">&#9820;</div>
+            <div class="r62" style="font-size: 50; text-align: center; color: white">&#9822;</div>
+            <div class="r63" style="font-size: 50; text-align: center; color: black">&#9821;</div>
+            <div class="r64" style="font-size: 50; text-align: center; color: white">&#9818;</div>
+            <div class="r65" style="font-size: 50; text-align: center; color: black">&#9819;</div>
+            <div class="r66" style="font-size: 50; text-align: center; color: white">&#9821;</div>
+            <div class="r67" style="font-size: 50; text-align: center; color: black">&#9822;</div>
+            <div class="r68" style="font-size: 50; text-align: center; color: white">&#9820;</div>
+            
+            <div class="wr" style="font-size: 20; ">
+                <div>
+                <b><h1>Points</h1></b>
+                &#9823; Pawn   : 1 pts
+                &#9819; Knight : 3 pts       <br>
+                &#9818; Bishop : 3 Pts       <br>
+                &#9816; King   : Infinity    <br>
+                &#9817; Queen  : 9 pts       <br>
+                &#9820; Rook   : 5 pts       <br>
+            </div>
+        </div>
+        </div>
+        </body>
+</html>
